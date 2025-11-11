@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan(process.env.NODE_ENV === "production" ? "combined" : "dev"));
 
-// ✅ CORS setup (allow Render + localhost)
+// ✅ Fixed CORS for frontend and local dev
 const allowedOrigins = [
   "https://mern-bookstore-1.onrender.com",
   "https://mern-bookstore-1-fx3v.onrender.com",
